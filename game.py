@@ -1,8 +1,7 @@
 
 import pygame as pyg
 from random import randint as rnd
-from birdst import Bird
-
+from bird import Bird
 
 
 class Wall:
@@ -26,8 +25,8 @@ class Brain:
 
     @staticmethod
     def input(distance, top_height, bot_height, vel):
+        #  return distance * (top_height - bot_height) // -15000 # 3 is right before, 2 is insidee
         pass
-        #return distance * (top_height - bot_height) // -15000 # 3 is right before, 2 is insidee
 
 
 class Game:
@@ -38,7 +37,7 @@ class Game:
     def setup(self):
         pyg.init()
         self.surface = pyg.display.set_mode((400, 400))
-        pyg.display.set_caption("")
+        pyg.display.set_caption("samo flappy bird")
         self.score = 0
         self.bird = Bird()
         self.walls = []
