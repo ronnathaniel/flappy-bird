@@ -1,7 +1,6 @@
 
 # flappy bird
 
-samo c 19
 
 
 ### Technology
@@ -18,3 +17,7 @@ clone this repository locally
 run the game
 
     python3 game.py
+    
+### Copyright
+
+samo c 19
